@@ -1,5 +1,11 @@
-class Album:
-    def __init__(self):
+
+from UnitTest.Audio import Audio
+from Audio import Audio
+
+class Album(Audio):
+
+    def __init__(self, name, formatAudio,  artist):
+        super(Album, self).__init__(name,formatAudio,artist)
         self.__songs = []
         self.size = 0
 
