@@ -1,6 +1,6 @@
-from List_Of_Reproduction import List_Of_Reproduction
-from Song import Song
-from Album import Album
+from ls.List_Of_Reproduction import List_Of_Reproduction
+from ls.Song import Song
+from ls.Album import Album
 def test_list_void():
     list_of_reproduction = List_Of_Reproduction()
     request = list_of_reproduction.get_all_durations()

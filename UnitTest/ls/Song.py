@@ -1,5 +1,5 @@
-from Audio import Audio
-from ChannelYoutube import ChannelYoutube
+from ls.Audio import Audio
+from ls.ChannelYoutube import ChannelYoutube
 class Song(Audio, ChannelYoutube):
 
     def __init__(self, audio, channel, duration,genre):

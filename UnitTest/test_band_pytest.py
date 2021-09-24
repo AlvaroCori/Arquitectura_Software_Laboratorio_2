@@ -1,5 +1,5 @@
-from Band import Band
-from Solo_Artist import Solo_Artist
+from ls.Band import Band
+from ls.Solo_Artist import Solo_Artist
 def test_band_info():
     artist = {}
     artist["name"] = "The Meat Boys"

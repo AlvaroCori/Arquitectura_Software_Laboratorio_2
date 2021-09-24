@@ -1,4 +1,4 @@
-from Artists import Artists
+from libraries.Artists import Artists
 class Band(Artists):
     def __init__(self, artist, popularity) :
         Artists.__init__(self,artist["name"],artist["experience"],artist["followers"])

@@ -1,5 +1,5 @@
-from Album import Album
-from Song import Song
+from ls.Album import Album
+from ls.Song import Song
 def test_album_duration():
     audio = {}
     audio["name"] = "Las esperanzas del pasado"

@@ -1,5 +1,5 @@
 
-from Audio import Audio
+from ls.Audio import Audio
 class Album(Audio):
 
     def __init__(self, audio):

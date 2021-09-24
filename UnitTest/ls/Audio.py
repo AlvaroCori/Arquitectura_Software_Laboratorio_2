@@ -1,5 +1,5 @@
 import abc
-from Artists import Artists
+from ls.Artists import Artists
 class Audio:
     def __init__(self, name,artist):
         self.__name = name

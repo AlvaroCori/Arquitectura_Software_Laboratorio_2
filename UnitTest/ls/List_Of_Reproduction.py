@@ -1,4 +1,4 @@
-from Audio import Audio
+from ls.Audio import Audio
 class List_Of_Reproduction:
     def __init__(self):
         self.audios = []

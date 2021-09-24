@@ -1,4 +1,4 @@
-from Solo_Artist import Solo_Artist
+from ls.Solo_Artist import Solo_Artist
 def test_artist_info():
     artist = {}
     artist["name"] = "Bob Sailor"

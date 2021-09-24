@@ -1,4 +1,4 @@
-from Artists import Artists
+from libraries.Artists import Artists
 class Solo_Artist(Artists):
     def __init__(self, artist, birthday) :
         Artists.__init__(self,artist["name"],artist["experience"],artist["followers"])

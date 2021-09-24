@@ -1,8 +1,8 @@
-from Song import Song
-from Album import Album
-from Solo_Artist import Solo_Artist
-from Band import Band
-from List_Of_Reproduction import List_Of_Reproduction
+from libraries.Song import Song
+from libraries.Album import Album
+from libraries.Solo_Artist import Solo_Artist
+from libraries.Band import Band
+from libraries.List_Of_Reproduction import List_Of_Reproduction
 audio = {}
 audio["name"] = "Tomas"
 audio["artist"] = None
