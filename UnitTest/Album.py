@@ -19,3 +19,9 @@ class Album(Audio):
 
     def get_info(self):
         return f"canciones del album: {self.size}\n{super().get_info()}"
+    
+    def get_number_duration(self):
+        duration = 0
+        for song in self.__songs:
+            duration += song.get_number_duration()
+        return duration

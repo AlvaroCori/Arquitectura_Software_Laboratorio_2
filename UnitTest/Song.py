@@ -13,3 +13,6 @@ class Song(Audio, ChannelYoutube):
     
     def get_info(self):
         return self.get_duration()+"\n"+self.__genre+"\n"+super().get_info()+"\n"+super().get_info_channel()
+
+    def get_number_duration(self):
+        return self.__duration
