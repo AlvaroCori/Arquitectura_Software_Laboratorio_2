@@ -1,18 +1,21 @@
 
-from UnitTest.Audio import Audio
 from Audio import Audio
-
 class Album(Audio):
 
-    def __init__(self, name, formatAudio,  artist):
-        super(Album, self).__init__(name,formatAudio,artist)
+    def __init__(self, audio):
+        Audio.__init__(self, audio["name"],audio["artist"])
         self.__songs = []
         self.size = 0
 
-    def insertSong(self, song):
+    def insert_song(self, song):
         self.__songs.append(song)
         self.size = self.size + 1
         
-    def getDuration(self):
-        duration = [song.getDuration() for song in self.__song]
-        return str(int(duration/60))+":"+str(duration%60)
+    def get_duration(self):
+        duration = []
+        if (self.size > 0):
+            duration = [song.get_name()+" = "+song.get_duration() for song in self.__songs]
+        return duration
+
+    def get_info(self):
+        return f"canciones del album: {self.size}\n{super().get_info()}"
